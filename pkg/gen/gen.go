@@ -54,7 +54,7 @@ func (g *generator) Run() (chan any, error) {
 
 	// start the go-routine that runs the generator
 	if !g.started {
-		fmt.Println("running go-routine inn Run")
+		fmt.Println("running go-routine in gen.Run")
 		go g.gf(g.indch, g.datach, g.funcdet)
 		time.Sleep(1 * time.Millisecond)
 		g.started = true
